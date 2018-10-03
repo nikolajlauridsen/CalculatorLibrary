@@ -8,40 +8,48 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        public static double Average(double[] numbers)
+        public static double Add(double v1, double v2)
         {
-            double average = 0;
-            for (int l = 0; l < numbers.Length; l++)
+            double resultat = 0;
+            resultat = v1 + v2;
+            return resultat;
+        }
+        
+
+        public static int Sum(int[] ints)
+        {
+            int sum = 0;
+            for (int l = 0; l < ints.Length; l++)
             {
 
-                average = average + numbers[l] / numbers.Length;
+                sum = sum + ints[l];
 
             }
-            return average;
+            return sum;
 
         }
 
-        public static double Minimum(double[] numbers)
+        public static int Min(int[] ints)
         {
             int min = 0;
-            for (int j = 0; j < numbers.Length; j++)
+            for (int j = 0; j < ints.Length; j++)
             {
-                if (numbers[j] < numbers[min])
+                if (ints[j] < ints[min])
                 {
                     min = j;
                 }
             }
 
-            return numbers[min];
+            return ints[min];
 
         }
 
-        public static double Maximum(double[] numbers)
+        public static int Max(int[] ints)
         {
             int max = 0;
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < ints.Length; i++)
             {
-                if (numbers[i] > numbers[max])
+                if (ints[i] > ints[max])
                 {
                     max = i;
                 }
@@ -50,19 +58,7 @@ namespace CalculatorLibrary
 
             }
 
-            return numbers[max];
-        }
-        public static double Sum(double[] numbers)
-        {
-            double sum = 0;
-            for (int l = 0; l < numbers.Length; l++)
-            {
-
-                sum = sum + numbers[l];
-
-            }
-            return sum;
-
+            return ints[max];
         }
     }
 }
