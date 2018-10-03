@@ -8,48 +8,40 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        public static double Add(double v1, double v2)
+        public static double Average(double[] numbers)
         {
-            double resultat = 0;
-            resultat = v1 + v2;
-            return resultat;
-        }
-        
-
-        public static int Sum(int[] ints)
-        {
-            int sum = 0;
-            for (int l = 0; l < ints.Length; l++)
+            double average = 0;
+            for (int l = 0; l < numbers.Length; l++)
             {
 
-                sum = sum + ints[l];
+                average = average + numbers[l] / numbers.Length;
 
             }
-            return sum;
+            return average;
 
         }
 
-        public static int Min(int[] ints)
+        public static double Minimum(double[] numbers)
         {
             int min = 0;
-            for (int j = 0; j < ints.Length; j++)
+            for (int j = 0; j < numbers.Length; j++)
             {
-                if (ints[j] < ints[min])
+                if (numbers[j] < numbers[min])
                 {
                     min = j;
                 }
             }
 
-            return ints[min];
+            return numbers[min];
 
         }
 
-        public static int Max(int[] ints)
+        public static double Maximum(double[] numbers)
         {
             int max = 0;
-            for (int i = 0; i < ints.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (ints[i] > ints[max])
+                if (numbers[i] > numbers[max])
                 {
                     max = i;
                 }
@@ -58,7 +50,19 @@ namespace CalculatorLibrary
 
             }
 
-            return ints[max];
+            return numbers[max];
+        }
+        public static double Sum(double[] numbers)
+        {
+            double sum = 0;
+            for (int l = 0; l < numbers.Length; l++)
+            {
+
+                sum = sum + numbers[l];
+
+            }
+            return sum;
+
         }
     }
 }
