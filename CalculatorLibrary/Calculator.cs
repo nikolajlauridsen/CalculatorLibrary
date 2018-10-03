@@ -8,6 +8,14 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
+        public static double Add(double v1, double v2)
+        {
+            double resultat = 0;
+            resultat = v1 + v2;
+            return resultat;
+        }
+        
+
         public static int Sum(int[] ints)
         {
             int sum = 0;
