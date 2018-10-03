@@ -8,6 +8,18 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
+        public static double Add(double v1, double v2)
+        {
+            double resultat = 0;
+            resultat = v1 + v2;
+            return resultat;
+        }
+        public static double Subtract(double v1, double v2)
+        {
+            double resultat = 0;
+            resultat = v1 - v2;
+            return resultat;
+        }
         public static double Average(double[] numbers)
         {
             double average = 0;
