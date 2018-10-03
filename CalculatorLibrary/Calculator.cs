@@ -57,9 +57,6 @@ namespace CalculatorLibrary
                 {
                     max = i;
                 }
-
-
-
             }
 
             return numbers[max];
@@ -76,5 +73,19 @@ namespace CalculatorLibrary
             return sum;
 
         }
+        public static double Divide(double v, double v1)
+        {
+            double divided = 0;
+            divided = v / v1;
+            return divided;
+        }
+
+        public static double Multiply(double v, double v1)
+        {
+            double multiply = 0;
+            multiply = v * v1;
+            return multiply;
+        }
+ 
     }
 }
