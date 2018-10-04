@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +23,10 @@ namespace CalculatorLibrary
         public static double Average(double[] numbers)
         {
             double average = 0;
-            for (int l = 0; l < numbers.Length; l++)
+            for (int i = 0; i < numbers.Length; i++)
             {
 
-                average = average + numbers[l] / numbers.Length;
+                average = average + numbers[i] / numbers.Length;
 
             }
             return average;
@@ -36,11 +36,11 @@ namespace CalculatorLibrary
         public static double Minimum(double[] numbers)
         {
             int min = 0;
-            for (int j = 0; j < numbers.Length; j++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[j] < numbers[min])
+                if (numbers[i] < numbers[min])
                 {
-                    min = j;
+                    min = i;
                 }
             }
 
@@ -64,10 +64,10 @@ namespace CalculatorLibrary
         public static double Sum(double[] numbers)
         {
             double sum = 0;
-            for (int l = 0; l < numbers.Length; l++)
+            for (int i = 0; i < numbers.Length; i++)
             {
 
-                sum = sum + numbers[l];
+                sum = sum + numbers[i];
 
             }
             return sum;
