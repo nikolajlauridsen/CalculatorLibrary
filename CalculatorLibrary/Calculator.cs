@@ -26,10 +26,10 @@ namespace CalculatorLibrary
             for (int i = 0; i < numbers.Length; i++)
             {
 
-                average = average + numbers[i] / numbers.Length;
+                average = average + numbers[i];
 
             }
-            return average;
+            return average / numbers.Length;
 
         }
 
