@@ -35,31 +35,31 @@ namespace CalculatorLibrary
 
         public static double Minimum(double[] numbers)
         {
-            int min = 0;
+            double min = double.MaxValue;
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i] < numbers[min])
+                if (numbers[i] < min)
                 {
-                    min = i;
+                    min = numbers[i];
                 }
             }
 
-            return numbers[min];
+            return min;
 
         }
 
         public static double Maximum(double[] numbers)
         {
-            int max = 0;
+            double max = double.MinValue;
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i] > numbers[max])
+                if (numbers[i] > max)
                 {
-                    max = i;
+                    max = numbers[i];
                 }
             }
 
-            return numbers[max];
+            return max;
         }
         public static double Sum(double[] numbers)
         {
